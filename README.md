@@ -180,10 +180,11 @@ Terminal ekranını temizler.
 > Kullanım Şekli: clear
 ```
 ![photo_2024-11-17_18-55-10](https://github.com/user-attachments/assets/0356616d-0807-4172-8b59-0c1f716bfcaa)
-![photo_2024-11-17_18-55-12](https://github.com/user-attachments/assets/0bd1f430-0e20-4e6e-97e5-4558b7152815)
 
 > [!NOTE]
 > Sadece görsel temizleme yapar, terminal geçmişini temizlemez.
+> ![photo_2024-11-17_18-55-12](https://github.com/user-attachments/assets/0bd1f430-0e20-4e6e-97e5-4558b7152815)
+
 <br>
 
 ## Geçmiş ve Performans Komutları

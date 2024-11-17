@@ -102,8 +102,6 @@ Farklı bir dizine geçiş yapmak için kullanılır.
 > [!WARNING]
 > Eğer klasör adı boşluk içeriyorsa, tırnak işaretleri kullanarak yazmalısınız.
 
-![photo_2024-11-17_02-36-56](https://github.com/user-attachments/assets/fb98b16e-9c47-4124-a534-4965ea19ed06)
-
 > [!TIP]
 > Mevcut dizinden bir üst dizine çıkmak için `cd ..` komudunu kullanabilirsiniz.
 <br>

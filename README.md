@@ -1,42 +1,104 @@
-# Windows DOS Komutları
+![photo_2024-11-17_18-55-10](https://github.com/user-attachments/assets/7bf2cb26-3fc3-4810-b96b-c1730ab58d04)![photo_2024-11-17_18-41-56](https://github.com/user-attachments/assets/21a013eb-b4bb-451e-98b8-09265692474d)![photo_2024-11-17_18-29-59](https://github.com/user-attachments/assets/bdce9b50-f09f-4745-a006-71289774b313)# Windows DOS Komutları
 
 Bu proje, DOS komutlarını öğrenmek isteyen başlangıç seviyesindeki kullanıcılar için hazırlanmış bir rehber niteliğindedir. Komutlar kategorilere ayrılarak kullanım şekilleri ve örnekleriyle sunulmuştur.
 
 ## Klasör Komutları
 
 #### **mkdir** Komutu
-mkdir komutu, yeni bir klasör oluşturmak için kullanılır.
+Yeni bir klasör oluşturmak için kullanılır.
 ```
 > Kullanım Şekli: mkdir Yeni_Klasör
 ```
-![photo_2024-11-17_02-27-23](https://github.com/user-attachments/assets/22f3a6cf-bb6a-474a-959d-65d3a781566c)
-![photo_2024-11-17_02-27-33](https://github.com/user-attachments/assets/e7a774e1-d58c-480b-a66a-9ea6d61f9798)
+![photo_2024-11-17_18-23-48](https://github.com/user-attachments/assets/949abef8-5814-4d79-ba21-32a8f92d2c20)
 
 > [!IMPORTANT]
-> Eğer klasör isminiz boşluk içeriyorsa, klasör adını tırnak işaretleri içine almayı unutmayın
+> Eğer klasör adında boşluk olacaksa, klasör ismini çift tırnak içinde yazmanız gerekir.
 ```
 > Kullanım Şekli: mkdir "Yeni Klasör"
 ```
+> [!CAUTION]
+> Eğer mevcut dizinde aynı isimde bir klasör zaten varsa, mkdir bir hata verir ve o klasörü tekrar oluşturmaz.
 <br>
 
 #### **rmdir** Komutu 
-rmdir komutu, belirtilen bir klasörü silmek için kullanılır.
+Mevcut ve boş bir klasörü silmek için kullanılır.
 ```
-> Kullanım Şekli : rmdir Silinecek_Klasör
+> Kullanım Şekli: rmdir Silinecek_Klasör
 ```
-![photo_2024-11-17_03-08-11](https://github.com/user-attachments/assets/e45916c0-3ceb-4950-887d-4974c40232ed)
-![photo_2024-11-17_02-36-48](https://github.com/user-attachments/assets/d08b8fc0-28b3-4b73-b307-bccd2ea73db8)
+![photo_2024-11-17_18-23-50](https://github.com/user-attachments/assets/c4b46b0a-db6d-4021-a662-488502f1612e)
 
 > [!CAUTION]
-> Klasörün içinde dosya varsa, rmdir komutu çalışmaz. Klasörü silebilmek için önce içindeki dosyaları silmeniz gerekebilir.
+> Klasörün içinde dosyalar varsa, önce dosyaları ve alt klasörleri kaldırmanız gerekir. Tüm içerikleriyle bir klasörü silmek için `rm -r` kullanılabilir.
 <br>
 
+## Dosya Komutları
+#### **touch** Komutu
+Yeni bir dosya oluşturmak veya mevcut bir dosyanın tarih ve saat bilgilerini güncellemek için kullanılır.
+```
+> Kullanım Şekli: touch Ornek_Dosya.txt
+```
+![photo_2024-11-17_18-30-57](https://github.com/user-attachments/assets/bacd2c71-ef99-45ab-bcd6-105a62ebeeb5)
+
+> [!CAUTION]
+> Aynı isimde bir dosya varsa, dosya içeriği değişmez, yalnızca tarih ve saat bilgisi güncellenir.
+<br>
+
+#### **cp** Komutu
+Bir dosyayı veya klasörü kopyalar.
+```
+> Kullanım şekli: cp Ornek_Dosya.txt Yeni_Klasor
+```
+![photo_2024-11-17_18-35-15](https://github.com/user-attachments/assets/f6d3e5a2-7cff-4901-93ac-6a75c5008519)
+<br>
+
+#### **mv** Komutu
+Bir dosyayı veya klasörü taşır ya da yeniden adlandırır.
+```
+> Kullanım Şekli: mv Ornek_Dosya.txt Hedef_Klasor
+```
+![photo_2024-11-17_18-35-18](https://github.com/user-attachments/assets/7e2dc7f2-99a7-4826-aaa2-9282e3ffba00)
+<br>
+
+#### **rm** Komutu
+Bir dosyayı veya klasörü siler.
+```
+> Kullanım Şekli: rm Ornek_Dosya.txt
+```
+![photo_2024-11-17_18-39-11](https://github.com/user-attachments/assets/f8b6f4bb-8fa5-4648-b69b-087f93543be0)
+![photo_2024-11-17_18-40-17](https://github.com/user-attachments/assets/4c13d39b-a1be-4bac-a40a-d9296a97b8b1)
+<br>
+
+#### **cat** Komutu
+Bir dosyanın içeriğini terminale yazdırır.
+```
+> Kullanım şekli: cat Ornek_Dosya.txt
+```
+![photo_2024-11-17_18-40-19](https://github.com/user-attachments/assets/43aabdd9-762e-4fd6-ac6d-1ae12f76ea18)
+<br>
+
+#### **head** Komutu
+Bir dosyanın ilk birkaç satırını gösterir.
+```
+> Kullanım şekli: head Ornek_Dosya.txt
+```
+![photo_2024-11-17_18-49-56](https://github.com/user-attachments/assets/0891b6bb-02e4-4427-ac9e-8a90f5d33559)
+<br>
+
+#### **tail** Komutu
+Bir dosyanın son birkaç satırını gösterir.
+```
+> Kullanım şekli: tail Ornek_Dosya.txt
+```
+![photo_2024-11-17_18-49-59](https://github.com/user-attachments/assets/8cf28553-c369-483c-adcf-198e558faabd)
+<br>
+
+## Navigasyon Komutları
 #### **cd** Komutu
-Belirtilen klasöre geçiş yapar.
+Farklı bir dizine geçiş yapmak için kullanılır.
 ```
 > Kullanım Şekli: cd Belgelerim
 ```
-![photo_2024-11-17_02-36-51](https://github.com/user-attachments/assets/cce12c06-3987-445c-a2fa-bdbc74c91d1d)
+![photo_2024-11-17_18-28-24](https://github.com/user-attachments/assets/d36c1398-e751-4b95-bcd9-c5ec4d775b69)
 
 > [!WARNING]
 > Eğer klasör adı boşluk içeriyorsa, tırnak işaretleri kullanarak yazmalısınız.
@@ -45,175 +107,106 @@ Belirtilen klasöre geçiş yapar.
 
 > [!TIP]
 > Mevcut dizinden bir üst dizine çıkmak için `cd ..` komudunu kullanabilirsiniz.
-
-## Dosya Komutları
-
-#### **start** Komutu
-Bir dosya veya uygulamayı başlatır.
-```
-> Kullanım Şekli : start uygulama.exe
-```
-![photo_2024-11-17_03-04-41](https://github.com/user-attachments/assets/c506113c-b5e3-460e-bcd5-5f8fd2d5eb89)
 <br>
 
-#### **dir** Komutu
-Geçerli dizindeki dosya ve klasörleri listeler.
+#### **ls** Komutu
+Mevcut dizindeki dosya ve klasörleri listeler.
 ```
-> Kullanım Şekli : dir
+> Kullanım Şekli: ls
 ```
-![photo_2024-11-17_02-45-39](https://github.com/user-attachments/assets/ec77c519-3ff4-4db5-afec-4c892ea94e04)
+![photo_2024-11-17_18-29-59](https://github.com/user-attachments/assets/0db33ce6-792b-4ff8-91a3-1a82defd2c2b)
 <br>
 
-#### **tree** Komutu
-Belirtilen bir yolun hiyerarşik dizin yapısını görüntüler.
+#### **pwd** Komutu
+Şu an içinde bulunduğunuz dizinin tam yolunu ekrana yazdırır.
 ```
-> Kullanım şekli : tree
+> Kullanım Şekli: pwd
 ```
-![photo_2024-11-17_02-47-45](https://github.com/user-attachments/assets/af661a79-c7fb-4bb0-9cef-6aa12dac2fc3)
-<br>
-
-#### **echo** Komutu
-Belirtilen metni ekrana yazdırır veya bir dosyaya kaydeder.
-```
-> Kullanım Şekli : echo "Merhaba, Dünya!"
-```
-![photo_2024-11-17_02-49-29](https://github.com/user-attachments/assets/ebeed586-6159-45f4-aa04-ed1f4d984681)
-![photo_2024-11-17_02-49-32](https://github.com/user-attachments/assets/92776085-5bc2-4e9e-bfdc-01fddc2d87e9)
-
-> [!TIP]
-> Eğer metni bir dosyaya yazdırmak isterseniz, > işaretini kullanarak yönlendirebilirsiniz.
-<br>
-
-#### **type** Komutu
-Belirtilen dosyanın içeriğini görüntüler.
-```
-> Kullanım Şekli : type Dosya_Adi.txt
-```
-![photo_2024-11-17_02-51-03](https://github.com/user-attachments/assets/025cc70f-22db-48ff-8c9a-87c60e24d781)
-
-> [!WARNING]
-> Arama sırasında büyük ve küçük harf duyarlılığına dikkat edin. Metni tam yazmalısınız, aksi takdirde sonuç almayabilirsiniz.
-<br>
-
-#### **find** Komutu
-Bir dosyada belirli bir metni arar.
-```
-> Kullanım şekli : find "Kelime" Dosya_Adi.txt
-```
-![photo_2024-11-17_02-52-55](https://github.com/user-attachments/assets/1b14e23e-1580-4f9a-88a9-4362d692657b)
-
-> [!WARNING]
-> Arama sırasında büyük ve küçük harf duyarlılığına dikkat edin. Metni tam yazmalısınız, aksi takdirde sonuç almayabilirsiniz.
-<br>
-
-#### **copy** Komutu
-Bir dosyayı başka bir yere kopyalar.
-```
-> Kullanım Şekli : copy Ornek_Dosya.txt Yeni_Klasor
-```
-![photo_2024-11-17_02-54-25](https://github.com/user-attachments/assets/b77dd949-2a16-4576-83ff-355bf4c8ac85)
-![photo_2024-11-17_02-54-27](https://github.com/user-attachments/assets/4ac9d68d-cce0-4400-968e-0fbda8440c85)
-
-> [!IMPORTANT]
-> Kopyalanacak dosyanın yolu tam olarak belirtilmelidir. Klasör adı boşluk içeriyorsa, tırnak işaretleri kullanın.
-<br>
-
-#### **move** Komutu
-Bir dosyayı başka bir konuma taşır.
-```
-> move Ornek_Dosya.txt Hedef_Klasör
-```
-![photo_2024-11-17_02-55-49](https://github.com/user-attachments/assets/9c1d9121-94a8-4779-a02e-64a4648117bd)
-![photo_2024-11-17_02-55-52](https://github.com/user-attachments/assets/05fcaa5a-0113-4b48-a647-2fef462d3543)
-
-> [!WARNING]
-> Taşıma işlemi, dosyayı orijinal konumundan kaldırır. Eğer yanlış yere taşırsanız, dosya kaybolabilir.
-<br>
-
-#### **ren** Komutu
-Bir dosyanın veya klasörün adını değiştirir.
-```
-> Kullanım Şekli : ren Eski_Adi.txt Yeni_Adi.txt
-```
-![photo_2024-11-17_02-57-27](https://github.com/user-attachments/assets/b6e98379-2f59-4c1f-82c9-3a06cef0b7e9)
-![photo_2024-11-17_02-57-33](https://github.com/user-attachments/assets/542508f2-9ede-48d6-a50b-a6d5e295291f)
-
-> [!CAUTION]
-> Dosya adı değiştirildiğinde, dosyanın uzantısı (örneğin .txt) değiştirilemez.
-<br>
-
-#### **del** Komutu
-Belirtilen dosyayı kalıcı olarak siler.
-```
-> Kullanım Şekli : del Silinecek_Dosya.txt
-```
-![photo_2024-11-17_02-58-44](https://github.com/user-attachments/assets/20236bcc-7d87-40ac-837d-369082edc668)
-![photo_2024-11-17_02-58-46](https://github.com/user-attachments/assets/fbecf2c0-03a5-46e0-8f2d-b804002d26c3)
+![photo_2024-11-17_18-30-54](https://github.com/user-attachments/assets/d51fe51d-2cf7-40b2-814f-557db22aacf8)
 <br>
 
 ## Sistem Komutları
-
-#### **systeminfo** Komutu
-Bilgisayarın sistem bilgilerini görüntüler.
+#### **whoami** Komutu
+Hangi kullanıcı hesabıyla giriş yaptığınızı gösterir.
 ```
-> Kullanım Şekli : systeminfo
+> Kullanım Şekli: whoami
 ```
-![photo_2024-11-17_03-00-00](https://github.com/user-attachments/assets/06040b2d-97ea-42ee-aced-041672de2231)
+![photo_2024-11-17_18-41-56](https://github.com/user-attachments/assets/6c685e47-0eb7-4fe1-8686-6c6358a010e5)
 <br>
 
-#### **ipconfig** Komutu
-Ağ bağdaştırıcılarının yapılandırmalarını ve IP adreslerini gösterir.
+#### **uname** Komutu
+İşletim sistemi hakkında bilgi verir.
 ```
->Kullanım şekli : ipconfig
+> Kullanım Şekli: uname
 ```
-![photo_2024-11-17_03-01-09](https://github.com/user-attachments/assets/728c2716-8909-4207-a976-b72219c53f1b)
+![photo_2024-11-17_18-42-42](https://github.com/user-attachments/assets/62a906e3-5ee7-4f46-bf37-c34a9ad81edb)
+
+> [!TIP]
+> `uname -a`, sistem hakkında tüm bilgileri gösterir.
 <br>
 
-#### **tasklist** Komutu
-Çalışan işlemleri listeler.
+#### **df** Komutu
+Disk kullanımını ve boş alan miktarını gösterir.
 ```
-> Kullanım Şekli : tasklist
+> Kullanım Şekli: df
 ```
-![photo_2024-11-17_03-01-55](https://github.com/user-attachments/assets/0c7361ab-d5ea-4209-b1ac-2a16a6dbec70)
-<br>
-
-## Tarih ve Saat Komutları
-
-#### **date /T** Komutu
-Güncel tarihi görüntüler.
-```
->Kullanım Şekli : date /T
-```
-![photo_2024-11-17_03-03-01](https://github.com/user-attachments/assets/5495895d-1b2f-4cef-a1eb-f01a0df42cba)
-<br>
-
-#### **time /T** Komutu
-Güncel saati görüntüler.
-```
-> Kullanım Şekli : time /T
-```
-![photo_2024-11-17_03-03-03](https://github.com/user-attachments/assets/a27617e1-634f-494a-becd-826b76ab57c5)
-<br>
-
-## Disk Yönetimi ve Kapatma Komutları
-
-#### **diskpart** Komutu
-Disk bölümlerini ve yapılandırmalarını yönetmek için kullanılır.
-```
-> Kullanım Şekli : diskpart
-```
-![photo_2024-11-17_03-06-34](https://github.com/user-attachments/assets/e26e167f-d22e-4f78-9dda-5625102a15e7)
-
-> [!WARNING]
-> Disk bölümleme işlemleri dikkatli yapılmalıdır, yanlışlıkla veri kaybına neden olabilir.
-<br>
-
-#### **shutdown /s /t** Komutu
-Bilgisayarı kapatır veya yeniden başlatır.
-```
-> Kullanım Şekli : shutdown /s /t 30
-```
-![photo_2024-11-17_03-06-37](https://github.com/user-attachments/assets/be98330e-c444-4e8e-9048-28ad729f1f4a)
+![photo_2024-11-17_18-51-23](https://github.com/user-attachments/assets/f504b69d-b66a-4575-a127-f73c22132fd7)
 
 > [!IMPORTANT]
-> 30 saniye sonra bilgisayar kapanacaktır. Eğer işlem iptal edilmek isteniyorsa, shutdown /a komutunu kullanabilirsiniz.
+> `df -h`, bilgileri insan tarafından okunabilir hale getirir (ör. GB, MB, KB).
+<br>
+
+#### **hostname** Komutu
+Bilgisayarın ağ üzerindeki adını gösterir.
+```
+> Kullanım Şekli: hostname
+```
+![photo_2024-11-17_18-52-52](https://github.com/user-attachments/assets/893d2fff-576d-4f34-a4c8-e7c5ffef5f21)
+
+> [!TIP]
+> Sistem adını değiştirmek için yönetici haklarına ihtiyacınız vardır.
+<br>
+
+#### **uptime** Komutu
+Sistemin ne kadar süredir çalıştığını ve kaç kullanıcının bağlı olduğunu gösterir.
+```
+> Kullanım Şekli: uptime
+```
+![photo_2024-11-17_18-53-56](https://github.com/user-attachments/assets/016df4d5-55d6-4b45-b411-0d71a97c4623)
+<br>
+
+#### **clear** Komutu
+Terminal ekranını temizler. 
+```
+> Kullanım Şekli: clear
+```
+![photo_2024-11-17_18-55-10](https://github.com/user-attachments/assets/0356616d-0807-4172-8b59-0c1f716bfcaa)
+![photo_2024-11-17_18-55-12](https://github.com/user-attachments/assets/0bd1f430-0e20-4e6e-97e5-4558b7152815)
+
+> [!NOTE]
+> Sadece görsel temizleme yapar, terminal geçmişini temizlemez.
+<br>
+
+## Geçmiş ve Performans Komutları
+#### **history** Komutu
+Daha önce çalıştırılan komutların listesini gösterir.
+```
+> Kullanım Şekli: history
+```
+![photo_2024-11-17_18-56-47](https://github.com/user-attachments/assets/45801af3-e056-4c7a-8ffb-6458d7ca8200)
+
+> [!IMPORTANT]
+> Komut geçmişini temizlemek isterseniz history -c kullanabilirsiniz.
+<br>
+
+#### **top** Komutu
+Çalışan işlemleri gerçek zamanlı olarak gösterir.
+```
+> Kullanım Şekli: top
+```
+![photo_2024-11-17_18-56-58](https://github.com/user-attachments/assets/58b9afee-c907-42a1-bea1-3cb7e3ad473f)
+
+> [!TIP]
+> İşlemleri sıralamak veya belirli işlemleri sonlandırmak için kullanılabilir.
+> [!WARNING]
+> Yanlış işlemi sonlandırmaktan kaçınmak için dikkatli olmalısınız.

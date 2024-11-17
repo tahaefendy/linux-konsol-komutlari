@@ -1,6 +1,5 @@
-# Windows DOS Komutları
-
-Bu proje, DOS komutlarını öğrenmek isteyen başlangıç seviyesindeki kullanıcılar için hazırlanmış bir rehber niteliğindedir. Komutlar kategorilere ayrılarak kullanım şekilleri ve örnekleriyle sunulmuştur.
+# Linux Konsol Komutları
+Bu proje, Linux terminal komutlarını öğrenmek isteyen başlangıç seviyesindeki kullanıcılar için hazırlanmış bir rehber niteliğindedir. Komutlar, kategorilere ayrılarak kullanım şekilleri ve örnekleriyle sunulmuştur.
 
 ## Klasör Komutları
 

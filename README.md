@@ -1,4 +1,4 @@
-![photo_2024-11-17_18-55-10](https://github.com/user-attachments/assets/7bf2cb26-3fc3-4810-b96b-c1730ab58d04)![photo_2024-11-17_18-41-56](https://github.com/user-attachments/assets/21a013eb-b4bb-451e-98b8-09265692474d)![photo_2024-11-17_18-29-59](https://github.com/user-attachments/assets/bdce9b50-f09f-4745-a006-71289774b313)# Windows DOS Komutları
+# Windows DOS Komutları
 
 Bu proje, DOS komutlarını öğrenmek isteyen başlangıç seviyesindeki kullanıcılar için hazırlanmış bir rehber niteliğindedir. Komutlar kategorilere ayrılarak kullanım şekilleri ve örnekleriyle sunulmuştur.
 

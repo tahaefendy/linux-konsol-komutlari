@@ -208,5 +208,6 @@ Daha önce çalıştırılan komutların listesini gösterir.
 
 > [!TIP]
 > İşlemleri sıralamak veya belirli işlemleri sonlandırmak için kullanılabilir.
+
 > [!WARNING]
 > Yanlış işlemi sonlandırmaktan kaçınmak için dikkatli olmalısınız.
